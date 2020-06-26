@@ -13,3 +13,13 @@ body {
   background-color: var(--bg-color);
   color: var(--text-color);
 }
+
+#colorButton {
+  position: absolute;
+  right: 20px;
+  padding: 7px;
+  border-radius: 5px;
+  border: none;
+  background: rgb(0,219,255);
+  background: linear-gradient(90deg, rgba(0,219,255,1) 0%, rgba(13,255,0,1) 75%); 
+}
