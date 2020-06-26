@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="./style.css">
+    <script>
+      var cssVariables = document.documentElement.style;
+      var colorTheme = "light";
+      function setColorTheme() {
+        if (colorTheme == "light") {
+          colorTheme = "dark"
+          cssVariables.setProperty("--text-color", "#ffffff");
+          cssVariables.setProperty("--bg-color", "#121212")
+        } else {
+          colorTheme = "light";
+          cssVariables.setProperty("--text-color", "#121212");
+          cssVariables.setProperty("--bg-color", "#ffffff")
+        }
+      }
+    </script>
+    <button 
+      onclick="setColorTheme()" 
+      style="position: absolute; right: 20px;">
+      Set Color Theme
+    </button>
+  </head>
+  <body>
+    <h1>React JS</h1>
+    <hr />
+    <p>A JS library to create a reactive UX\UI.</p>
+    <p>Features</p>
+    <ul>
+      <li>Can be used to quickly create proffessional websites.</li>
+      <li>One codebase can be used for PWA's, websites, and apps.</li>
+    </ul>
+    <hr />
+    <h4>Philosphy</h4>
+    <p>
+      The React philosophy is composed of components and classes that have a render<br>
+      function. The render function returns a HTML element or a container that holds<br>
+      multiple elements, as a render function can return only one HTML element.<br>
+      The syntax used is called JSX, which is a concatenation of JS and XML.<br>
+  </body>
+</html>
